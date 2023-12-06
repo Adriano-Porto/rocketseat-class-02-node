@@ -27,7 +27,7 @@
     "node": "18"
   },
   "scripts": {
-    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
     "test": "npx vitest",
